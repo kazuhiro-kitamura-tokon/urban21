@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アーバン21様 AI活用支援相談 ご報告と今後のご提案｜株式会社トーコン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f2328;
+    --ink-2:#4a5058;
+    --ink-3:#7a8089;
+    --line:#d9dce1;
+    --paper:#ffffff;
+    --field:#f3f5f7;
+    --navy:#16345a;
+    --navy-2:#e7edf5;
+    --seal:#b8362a;
+    --seal-2:#fbeeec;
+    --ok:#2f7a4f;
+    --ok-2:#e9f4ed;
+    --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--field);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.9;font-feature-settings:"palt"}
+  .page{max-width:880px;margin:32px auto;background:var(--paper);box-shadow:0 1px 3px rgba(20,30,50,.08);padding:64px 72px 72px}
+  h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--navy);line-height:1.5;margin:0}
+  h1{font-size:30px;letter-spacing:.02em}
+  h2{font-size:22px;padding-top:56px;margin-bottom:22px;position:relative}
+  h2::before{content:"";display:block;width:36px;height:3px;background:var(--navy);margin-bottom:14px}
+  h3{font-size:16.5px;margin:26px 0 8px;color:var(--ink)}
+  p{margin:0 0 14px}
+  ul,ol{margin:0 0 14px;padding-left:1.4em}
+  li{margin:4px 0}
+  strong{font-weight:700;color:var(--ink)}
+  .muted{color:var(--ink-3);font-size:13px}
+  /* cover */
+  .cover-kicker{font-size:13px;color:var(--ink-2);letter-spacing:.06em;margin-bottom:14px}
+  .cover-sub{font-family:var(--serif);font-size:17px;color:var(--ink-2);margin:10px 0 34px}
+  .meta{display:grid;grid-template-columns:120px 1fr;gap:6px 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;font-size:14px}
+  .meta dt{color:var(--ink-3)}
+  .meta dd{margin:0}
+  /* lead statement */
+  .lead{margin:44px 0 0;padding:28px 32px;background:var(--navy);color:#fff;border-radius:2px}
+  .lead .l1{font-family:var(--serif);font-size:20px;line-height:1.7;font-weight:700}
+  .lead .l2{margin:12px 0 0;color:#cfd9e6;font-size:14px}
+  /* summary points */
+  .points{list-style:none;padding:0;margin:0;counter-reset:pt}
+  .points li{counter-increment:pt;position:relative;display:block;padding:16px 0 16px 58px;border-bottom:1px solid var(--line)}
+  .points li:first-child{border-top:1px solid var(--line)}
+  .points li::before{content:counter(pt);position:absolute;left:0;top:20px;font-family:var(--serif);font-size:26px;line-height:1;color:var(--navy)}
+  .points b{display:block;font-size:15.5px;margin-bottom:2px}
+  /* two col */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+  .box{background:var(--field);padding:20px 22px;border-radius:2px}
+  .box h3{margin-top:0}
+  /* decisions with seal */
+  .seal-list{list-style:none;padding:0;margin:0}
+  .seal-list li{position:relative;padding:12px 0 12px 78px;border-bottom:1px dashed var(--line)}
+  .seal-list li::before{content:"決定";position:absolute;left:0;top:14px;width:58px;height:26px;border:1.5px solid var(--seal);color:var(--seal);border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.2em;display:flex;align-items:center;justify-content:center;background:var(--seal-2)}
+  .seal-list b{display:block}
+  /* staircase */
+  .stairs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin:26px 0 8px;align-items:end}
+  .step{padding:18px 18px 16px;border:1px solid var(--line);background:#fff;position:relative}
+  .step:nth-child(1){min-height:200px;background:var(--navy-2);border-color:transparent}
+  .step:nth-child(2){min-height:240px}
+  .step:nth-child(3){min-height:280px}
+  .step .n{font-family:var(--serif);font-size:13px;color:var(--ink-3);letter-spacing:.1em}
+  .step .t{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin:4px 0 8px;line-height:1.4}
+  .step p{font-size:13.5px;line-height:1.75;margin:0;color:var(--ink-2)}
+  .step .tag{display:inline-block;margin-top:10px;font-size:12px;color:var(--seal);border:1px solid var(--seal);padding:0 8px;border-radius:2px}
+  /* table */
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 6px}
+  th,td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--line)}
+  th{background:var(--field);font-weight:700;color:var(--ink-2);font-size:13px;white-space:nowrap}
+  td.k{white-space:nowrap;font-weight:700;color:var(--navy)}
+  .effect{color:var(--ok);font-weight:500}
+  .tasks td.g{text-align:center;font-family:var(--serif);font-size:20px;color:var(--navy);white-space:nowrap}
+  .tasks td.k{white-space:normal;min-width:140px}
+  .tasks td{font-size:13.5px;line-height:1.7}
+  /* flow */
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:18px 0 8px;position:relative}
+  .flow .f{padding:16px 14px;background:#fff;border:1px solid var(--line);position:relative;min-height:140px}
+  .flow .f+.f{border-left:none}
+  .flow .f::after{content:"";position:absolute;right:-8px;top:50%;width:14px;height:14px;background:#fff;border-right:1px solid var(--line);border-top:1px solid var(--line);transform:translateY(-50%) rotate(45deg);z-index:1}
+  .flow .f:last-child::after{display:none}
+  .flow .f .h{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:6px}
+  .flow .f p{font-size:13px;line-height:1.7;margin:0;color:var(--ink-2)}
+  .flow .f.human{background:var(--seal-2)}
+  .flow .f.human .h{color:var(--seal)}
+  /* plan */
+  .plan{border:1px solid var(--line);margin-top:8px}
+  .plan .row{display:grid;grid-template-columns:150px 1fr 190px;border-bottom:1px solid var(--line)}
+  .plan .row:last-child{border-bottom:none}
+  .plan .row>div{padding:16px 18px}
+  .plan .row>div+div{border-left:1px solid var(--line)}
+  .plan .name{font-family:var(--serif);font-weight:700;color:var(--navy);font-size:15.5px}
+  .plan .name small{display:block;font-family:var(--sans);font-weight:400;color:var(--ink-3);font-size:12px;margin-top:4px}
+  .plan .desc{font-size:14px}
+  .plan .desc ul{margin:0;padding-left:1.2em}
+  .plan .price{font-size:14px;color:var(--ink-2)}
+  .plan .price .fill{display:block;font-family:var(--serif);font-size:18px;color:var(--navy);font-weight:700}
+  .note{background:var(--seal-2);border-left:3px solid var(--seal);padding:14px 18px;margin:20px 0 0;font-size:13.5px;color:var(--ink-2)}
+  /* actions */
+  .who{display:inline-block;font-size:12px;padding:1px 8px;border-radius:2px;background:var(--navy-2);color:var(--navy);font-weight:700;margin-right:6px;white-space:nowrap}
+  .who.c{background:var(--ok-2);color:var(--ok)}
+  footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-3);line-height:1.8}
+  @media (max-width:720px){
+    .page{margin:0;padding:36px 22px 48px}
+    h1{font-size:24px}
+    .cols,.stairs,.flow{grid-template-columns:1fr}
+    .step,.step:nth-child(n){min-height:auto}
+    .flow .f+.f{border-left:1px solid var(--line);border-top:none}
+    .flow .f::after{display:none}
+    .plan{border:none}
+    .plan .row{grid-template-columns:1fr;border:1px solid var(--line);border-radius:3px;margin-bottom:16px;overflow:hidden}
+    .plan .row:last-child{margin-bottom:0}
+    .plan .row>div{padding:14px 16px}
+    .plan .row>div+div{border-left:none;border-top:none}
+    .plan .name{background:var(--navy-2);padding:12px 16px}
+    .plan .name br{display:none}
+    .plan .name small{display:inline;margin-left:8px}
+    .plan .price{padding-top:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;border-top:1px dashed var(--line);margin:0 16px;padding:10px 0 14px}
+    .plan .price .fill{display:inline}
+    .meta{grid-template-columns:1fr}
+  }
+  @media print{
+    body{background:#fff}
+    .page{box-shadow:none;margin:0;padding:28mm 22mm;max-width:none}
+    h2{break-after:avoid;padding-top:36px}
+    .stairs,.flow,.plan,table,.box,.lead{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <div class="cover-kicker">2026年9月4日　打ち合わせのご報告と今後のご提案</div>
+    <h1>AIと働く会社になるための<br>最初の一歩について</h1>
+    <div class="cover-sub">アーバン21様　AI活用支援相談　サマリー報告書</div>
+    <dl class="meta">
+      <dt>日時</dt><dd>2026年9月4日（金）16:30〜18:00　オンライン（Google Meet）</dd>
+      <dt>ご出席</dt><dd>アーバン21様　ご担当者様</dd>
+      <dt>トーコン</dt><dd>福島 良太（営業担当）／ 喜多村 一寛（AIソリューション担当）</dd>
+      <dt>本資料の目的</dt><dd>当日のお話を整理し、御社が今日から着手できることと、弊社のご支援の進め方をご提案するものです</dd>
+    </dl>
+  </header>
+
+  <section class="lead" aria-label="本日の結論">
+    <div class="l1">AIを「使う道具」ではなく、「採用する社員」として迎える。<br>まずは日々の困りごとをAIに相談する習慣から、スモールスタートで始めます。</div>
+    <p class="l2">個別のアプリやパッケージを先に入れるのではなく、御社の皆さまがAIと一緒に働ける状態をつくることを最優先にする、という方針で合意しました。</p>
+  </section>
+
+  <section>
+    <h2>本日のお話の要点</h2>
+    <ol class="points">
+      <li><b>事務・メール対応に時間を取られ、本来の営業活動が圧迫されている</b>少人数で売買仲介と賃貸管理を担われており、報告書作成・メール処理・入金確認といった定型業務の比重が大きい状態です。</li>
+      <li><b>「自動化」の近道は、アプリ導入ではなく“AIに仕事を渡す”日常づくり</b>毎日AIに業務を相談し、仕事を覚えさせていくと、AI側から「ここはツール化した方が早い」という提案が返ってくるようになります。順番を逆にすると、使われないシステムだけが残ります。</li>
+      <li><b>セキュリティ上、生成AIの業務利用は有料プランが前提</b>無料版は入力内容が学習に使われる可能性があり、お客様情報を扱う不動産業では避けるべきです。有料版であれば「学習に使われない・データが隔離される」ことを取引先に説明できます。</li>
+      <li><b>AIの成果物は、必ず人が見て送る</b>メールの下書きまではAI、送信ボタンは人が押す。この線引きを最初に習慣化しておくことが、営業としての信頼と倫理を守ります。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>お伺いした課題の整理</h2>
+    <div class="cols">
+      <div class="box">
+        <h3>日々の業務で負担が大きいもの</h3>
+        <ul>
+          <li>メールの確認・仕分け・不要メールの整理・返信文の作成</li>
+          <li>売却物件オーナー様への2週間に1回の販売活動報告書</li>
+          <li>問い合わせへの初動対応。休日でも「機械的でない」返信を早く返したい</li>
+          <li>広告用の動画・クリエイティブ制作（昨年から生成AIで一部着手済み）</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>賃貸管理：最も手間とミスが集中している業務</h3>
+        <ul>
+          <li>毎月の送金レポート作成と、各オーナー様・税理士への送付</li>
+          <li>楽天銀行2口座の入金確認。保証会社経由の入金は各社サイトを個別に確認</li>
+          <li>精算金の入出金が絡むと複雑になり、目視チェックでは漏れが起きうる</li>
+          <li>月末〜月初に作業が集中し、この間ほぼ他の業務ができない</li>
+        </ul>
+      </div>
+    </div>
+    <h3>現在のツール利用状況</h3>
+    <ul>
+      <li>Claude（個人契約・有料）を主にチャット用途で利用。ChatGPTは無料版、加盟本部経由の共有ツールは利用制限が多く実質未使用</li>
+      <li>メールは独自ドメインと個人Gmailが混在。社員間の打ち合わせは対面が中心で、記録は手作業</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>当日の合意事項</h2>
+    <ul class="seal-list">
+      <li><b>AI活用の基本戦略を「AI社員の採用」と位置づける</b>ツールの導入ではなく、同僚として業務を共有し、指示を言語化してマネジメントする運用にします。</li>
+      <li><b>業務で使う生成AIは有料プランに限定する</b>情報セキュリティの観点から、無料版・個人アカウントでの業務利用はやめ、学習防止とデータ隔離が保証されたプランに切り替えます。</li>
+      <li><b>独自ドメインで Google Workspace を導入する</b>メールと業務データの基盤を整え、AI連携（メール下書き・日程調整など）の受け皿にします。</li>
+      <li><b>AI生成物は人が確認してから外に出す</b>「ヒューマン・イン・ザ・ループ」を全員のルールにし、AIが書いたものをそのまま送らない教育を初期から行います。</li>
+      <li><b>弊社がアドバイザーとしてスモールスタートで伴走する</b>最初の一歩からご一緒し、進め方と料金体系を別途ご提示したうえで開始します。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>ご提案：3つの階段で進めます</h2>
+    <p>企業がAI活用を成功させる順番は、私たちの経験上この3段階です。1段目を飛ばして2・3段目から始めると、たいてい定着しません。</p>
+    <div class="stairs">
+      <div class="step">
+        <div class="n">第1段</div>
+        <div class="t">毎日AIに相談する</div>
+        <p>降ってきた仕事はまずAIに相談する。困りごとをそのまま話し、Excelやメールの下書きを頼む。上手な指示文を探すのではなく、悩みを素直に打ち上げる力を全員が身につけます。</p>
+        <span class="tag">今日から着手</span>
+      </div>
+      <div class="step">
+        <div class="n">第2段</div>
+        <div class="t">業務を棚卸しする</div>
+        <p>AIにインタビューさせる形で、各人の日次・週次・月次業務を言語化。「人がやるべきこと」と「AIに任せてよいこと」を自分で線引きできる状態にします。ここで自動化候補が色分けされます。</p>
+        <span class="tag">1〜2か月目</span>
+      </div>
+      <div class="step">
+        <div class="n">第3段</div>
+        <div class="t">ルールをつくる</div>
+        <p>有料プランの統一、入力してよい情報の基準、AI生成物の確認ルール、社外へのAI利用の伝え方。教育と合わせてガバナンスを整え、その先に顧客データ・売上データをAIと共有する本当のDXが見えてきます。</p>
+        <span class="tag">2〜3か月目</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>今すぐ着手できること</h2>
+    <table>
+      <thead><tr><th>施策</th><th>内容</th><th>期待できること</th></tr></thead>
+      <tbody>
+        <tr><td class="k">有料プランへの統一</td><td>業務利用するAIを有料プランに切り替え、社員全員が会社のアカウントで使える状態にします。「どのAIを主契約にするか」は業務特性に合わせて弊社が診断します。</td><td class="effect">情報漏えいリスクの解消。取引先に説明できる体制</td></tr>
+        <tr><td class="k">Google Workspace 導入</td><td>お手持ちの独自ドメインを接続し、メール・カレンダー・ドライブを会社の基盤に。1ユーザー月額1,000円台のプランで十分です。</td><td class="effect">メールのAI連携が可能に。信頼性のある社用メール</td></tr>
+        <tr><td class="k">メールのAI下書き運用</td><td>新着メールの仕分け、要対応メールの下書き作成、日程候補の提示をAIに任せ、人は確認と送信だけを行う運用に。</td><td class="effect">メール処理時間の大幅削減。初動の速さで差別化</td></tr>
+        <tr><td class="k">会議の文字起こし習慣</td><td>Google Meet の文字起こし、対面ならスマートフォンの録音アプリで記録し、テキストをAIに渡して議事録・提案書を即日作成。</td><td class="effect">本資料と同じ速さで報告・提案が出せる</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>自動化の具体案：賃貸管理の入金確認と送金レポート</h2>
+    <p>最も負担が大きく、金額に直結する業務から着手する価値があります。当日お伺いした流れをもとにした構成案です。実際の方式は御社の口座・保証会社・使用ソフトの状況を確認してから確定します。</p>
+    <div class="flow">
+      <div class="f"><div class="h">1. 入金データの取得</div><p>楽天銀行の明細を定期取得（API連携またはCSV取込）。保証会社の代行入金はサイトの明細ダウンロードやCSVで補完します。</p></div>
+      <div class="f"><div class="h">2. 契約台帳との照合</div><p>物件・入居者・家賃・振込予定日を持つ台帳（スプレッドシート）と自動照合。精算金の入出金も台帳側で管理します。</p></div>
+      <div class="f"><div class="h">3. 差異だけを通知</div><p>未入金・金額違い・想定外の入金だけをアラートとして通知。全件を目で追う作業をなくします。</p></div>
+      <div class="f human"><div class="h">4. 人が確認して送付</div><p>AIが月次送金レポートの下書きを生成。担当者が確認し、オーナー様・税理士へ送付します。</p></div>
+    </div>
+    <p class="muted">ポイントは「全部を自動で送る」のではなく、照合と下書きまでをAIが担い、最終確認と送付は人が行う設計にすることです。</p>
+  </section>
+
+  <section>
+    <h2>本日挙がった困りごとは、どこまでAIに任せられるか</h2>
+    <p>お伺いした業務をひとつずつ、「AIに任せられる範囲」「人が担う部分」「具体的な方法」に分けて整理しました。◎はほぼAIで完結、○はAIが下書き・照合まで、△は人の判断が中心でAIは補助、という目安です。</p>
+    <table class="tasks">
+      <thead><tr><th>困りごと</th><th>任せ度</th><th>AIに任せる範囲と方法</th><th>人が担う部分</th></tr></thead>
+      <tbody>
+        <tr><td class="k">メールの確認・仕分け</td><td class="g">◎</td><td>Google Workspace 連携のAIが新着を定期巡回。CCのみ・広告・通知は自動アーカイブし、要対応メールだけを一覧で報告。ラベル付けも自動化できます。</td><td>報告を見て「対応する／しない」を決める</td></tr>
+        <tr><td class="k">メールの返信文作成</td><td class="g">○</td><td>要対応メールに対してAIが下書きを作成し、Gmailの下書きフォルダに保存。過去の返信を数通渡しておけば、御社の文体に寄せて書きます。</td><td>下書きを読んで修正し、送信ボタンを押す</td></tr>
+        <tr><td class="k">不要メールの整理</td><td class="g">◎</td><td>「30日以上前の通知メール」「特定送信元の広告」など条件を決めれば、定期的に自動アーカイブ。削除ではなくアーカイブにしておけば取り戻せます。</td><td>最初に条件を決める。月に一度ざっと確認</td></tr>
+        <tr><td class="k">売却オーナー様への<br>販売活動報告書（2週に1回）</td><td class="g">○</td><td>反響数・内覧数・掲載媒体・次回施策をスプレッドシートに記録しておけば、AIが所定の書式で報告書を生成。ボタン一つ（または定期実行）でPDF化まで可能です。</td><td>数値の入力と、コメント欄の最終確認</td></tr>
+        <tr><td class="k">問い合わせへの初動対応<br>（休日含む）</td><td class="g">○</td><td>問い合わせ内容を読み取り、物件・条件に応じた一次回答の下書きを即時作成。「担当の○○が翌営業日にご連絡します」まで含めた、機械的でない文面が書けます。完全自動送信は推奨せず、下書き＋通知にとどめます。</td><td>休日はスマートフォンで下書きを確認して送信。担当者名で出す責任を持つ</td></tr>
+        <tr><td class="k">日程調整</td><td class="g">◎</td><td>カレンダーを見て空き候補を3つ提示、確定したら予定を作成しMeetのURLを添える。前後の予定が詰まっていれば注意してくれます。</td><td>候補の選択と、相手への最終連絡</td></tr>
+        <tr><td class="k">入金チェック<br>（楽天銀行2口座）</td><td class="g">○</td><td>明細をAPIまたはCSVで取り込み、契約台帳と自動照合。未入金・金額違い・想定外入金だけをアラート通知します。</td><td>アラートが出た件の確認と入居者・保証会社への連絡</td></tr>
+        <tr><td class="k">保証会社経由の入金確認</td><td class="g">△</td><td>各社サイトからダウンロードした明細（CSV・PDF）をAIが読み取り、台帳と突合。サイトへの自動ログインは規約上避け、ダウンロードは人が行います。</td><td>各社サイトへのログインと明細の取得</td></tr>
+        <tr><td class="k">精算金の管理</td><td class="g">○</td><td>退去精算・修繕費・立替などを台帳に記録すれば、当月の送金額への反映と「精算残あり」の警告をAIが自動計算。忘れがちな項目を先に指摘させられます。</td><td>精算内容の判断と台帳への記録</td></tr>
+        <tr><td class="k">毎月の送金レポート作成・送付</td><td class="g">○</td><td>照合済みの台帳から、オーナー様ごとの送金レポートと税理士向け一覧をAIが下書き生成。送付メールの下書きまで自動化できます。</td><td>レポートの最終確認と送付</td></tr>
+        <tr><td class="k">広告用の動画・クリエイティブ</td><td class="g">○</td><td>物件写真と要点を渡せば、キャッチコピー・SNS投稿文・動画の構成案や台本をAIが作成。画像・動画生成AIとの組み合わせで素材制作も可能です。</td><td>物件の見せ方の判断、公開前の表現チェック（不動産広告の表示ルール）</td></tr>
+        <tr><td class="k">会議・打ち合わせの議事録</td><td class="g">◎</td><td>Google Meet の文字起こし、対面ならスマートフォンの録音アプリの文字起こしをAIに渡し、議事録・宿題・提案書を即日作成。本資料がその実例です。</td><td>要点の確認と、社外に出す前の表現の調整</td></tr>
+        <tr><td class="k">顧客データを使った追客</td><td class="g">△</td><td>問い合わせ履歴・希望条件・最終接点日を蓄積すれば、「連絡が途絶えている見込み客」「条件に合う新着物件」をAIが抽出し、連絡文の下書きを作成。<strong>第3段（ガバナンス）の後</strong>に取り組む領域です。</td><td>誰に・いつ・何を送るかの判断と送信</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">◎○△は現時点での目安です。実際にどこまで任せるかは、業務棚卸しの中で御社と一緒に線引きしていきます。</p>
+  </section>
+
+  <section>
+    <h2>ご支援の進め方（案）</h2>
+    <p>「最初の一歩からアドバイザーとして伴走してほしい」というご意向に沿った、スモールスタートの構成です。</p>
+    <div class="plan">
+      <div class="row">
+        <div class="name">初期導入設計<small>初月・一式</small></div>
+        <div class="desc"><ul><li>現状の業務・ツールのヒアリングと、契約するAI・プランの診断</li><li>Google Workspace とAI有料プランの導入手順のご案内・設定支援</li><li>「まず何から始めるか」の着手計画</li></ul></div>
+        <div class="price">一式<span class="fill">100,000円</span></div>
+      </div>
+      <div class="row">
+        <div class="name">AI活用研修<small>全員参加・実演形式</small></div>
+        <div class="desc"><ul><li>「AIに相談する」感覚を身につける初回研修</li><li>メール下書き・資料作成など、御社の実業務を題材にした演習</li><li>数回のフォローアップで、相談相手を講師からAIへ移していきます</li></ul></div>
+        <div class="price">一式<span class="fill">200,000円</span></div>
+      </div>
+      <div class="row">
+        <div class="name">ガバナンス策定 ＆<br>業務棚卸しコンサルティング<small>3か月間</small></div>
+        <div class="desc"><ul><li>月次の定例相談と随時のチャット相談</li><li>AIインタビュー形式での業務棚卸し。人が担う業務／AIに任せる業務の線引きと自動化候補の選定</li><li>利用ルール・入力基準・確認ルールなど社内ガバナンスの策定</li></ul></div>
+        <div class="price">月額<span class="fill">300,000円</span><span class="muted">× 3か月</span></div>
+      </div>
+      <div class="row">
+        <div class="name">構築支援<small>個別案件</small></div>
+        <div class="desc"><ul><li>入金確認・送金レポート自動化など、個別ツールの構築</li><li>御社側で保守できる形（スプレッドシート＋スクリプト等）でお渡しします</li></ul></div>
+        <div class="price">案件ごと<span class="fill">100,000円〜</span><span class="muted">内容に応じてお見積り</span></div>
+      </div>
+    </div>
+    <div class="note">表示金額はいずれも税別です。まずは「初期導入設計」と「AI活用研修」のみで始め、手応えを見てから3か月のコンサルティングに進んでいただくことも可能です。ご支援の範囲は、次回のお打ち合わせで御社の優先順位に合わせて調整いたします。</div>
+  </section>
+
+  <section>
+    <h2>次のアクション</h2>
+    <table>
+      <thead><tr><th>担当</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td><span class="who c">アーバン21様</span></td><td>日々の困りごとをAIに相談することを、明日から始めていただく（うまく聞き方が分からなくても、そのまま話しかけて構いません）</td></tr>
+        <tr><td><span class="who c">アーバン21様</span></td><td>現在無料版で利用しているAIツールの有料版への切り替えを検討</td></tr>
+        <tr><td><span class="who c">アーバン21様</span></td><td>Google Workspace の導入とドメイン接続の手順を確認（ご不明点は弊社でご案内します）</td></tr>
+        <tr><td><span class="who">トーコン</span></td><td>本資料（サマリー・ご提案・ご支援メニューと料金）をお送りする</td></tr>
+        <tr><td><span class="who">トーコン</span></td><td>次回お打ち合わせの日程調整。導入ステップの確定と、着手する業務の選定</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>本資料は2026年9月4日のオンライン打ち合わせの記録（Google Meet 文字起こし）をもとに作成しています。発言内容の要約にあたり、当日の趣旨を損なわない範囲で表現を整えています。銀行APIの利用可否、各ツールの料金・仕様は導入時点で改めて確認いたします。</p>
+    <p>株式会社トーコン　AIソリューション担当　喜多村 一寛 ／ 営業担当　福島 良太</p>
+  </footer>
+
+</main>
+</body>
+</html>
